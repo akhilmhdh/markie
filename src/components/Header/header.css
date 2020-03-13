@@ -1,0 +1,18 @@
+.headerContainer {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px 5px 10px;
+  align-items: center;
+  font-family: "headliner";
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.headerItemContainer {
+  display: flex;
+}
+
+.headerItemContainer div {
+  padding: 5px;
+}

@@ -1,13 +1,29 @@
+@font-face {
+  font-family: "headliner";
+  src: url(./fonts/headliner/headlinerno.45_demo-webfont.woff2) format("woff2"),
+    url(./fonts/headliner/headlinerno.45_demo-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(./fonts/poppins/poppins-regular-webfont.woff2) format("woff2"),
+    url(./fonts/poppins/poppins-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icon {
+  width: 32px;
+  padding: 1px;
 }
