@@ -1,9 +1,10 @@
 import React,{Component} from 'react';
-import Showdown from 'showdown'
 
 import './App.css';
 import Header from './components/Header/header';
 import Details from './components/Details/details';
+import TextArea from './components/TextArea/textArea';
+import MarkDown from './components/MarkDown/markDown';
 
 class App extends Component{
   constructor(props){
@@ -11,9 +12,6 @@ class App extends Component{
     this.state=({text:"",fileName:"Untitled Doc"})
     this.onTextChange=this.onTextChange.bind(this);
     this.text2MD=this.text2MD.bind(this);
-  }
-  componentWillMount(){
-    this.converter=new Showdown.Converter();
   }
 
   onTextChange(el){
@@ -24,20 +22,21 @@ class App extends Component{
   }
   render(){
     return (
-      <div className="AppContainer">
+      <div className="appContainer">
         <Header/>
         <Details 
-        wordCount={this.state.text.split(" ").length-1} 
-        characterCount={this.state.text.length}
-        fileName={this.state.fileName}
-        setFileName={(el)=>{this.setState({fileName:el})}}
+          wordCount={this.state.text.split(" ").length-1} 
+          characterCount={this.state.text.length}
+          fileName={this.state.fileName}
+          setFileName={(el)=>{this.setState({fileName:el})}}
         />
-        <div className="textContainer">
-          <textarea value={this.state.text}
-          onChange={this.onTextChange}/>
+        <div className="appSubContainer">
+          <TextArea 
+            text={this.state.text}
+            setText={(el)=>{this.setState({text:el})}}/>
+          <MarkDown
+            text={this.state.text}/>
         </div>
-        <div className="markdownContainer" 
-        dangerouslySetInnerHTML={this.text2MD()}/>
       </div>
     );
   }

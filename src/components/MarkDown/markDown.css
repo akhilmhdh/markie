@@ -1,0 +1,17 @@
+.markdownContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px 5px 10px 5px;
+}
+
+.markdownOptionsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.markdownOutput {
+  overflow: scroll;
+  flex: 1;
+}
