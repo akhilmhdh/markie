@@ -14,3 +14,9 @@
   flex: 1;
   overflow: hidden;
 }
+
+@media screen and (max-device-width: 720px) {
+  .appSubContainer {
+    flex-direction: column;
+  }
+}

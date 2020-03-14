@@ -11,7 +11,7 @@ class MarkDown extends Component{
         this.changeView=this.changeView.bind(this);
     }
     componentWillMount(){
-        this.converter=new Showdown.Converter();
+        this.converter=new Showdown.Converter({emoji: true});
     }
     changeView(){
         this.setState({code:!this.state.code})
@@ -23,10 +23,10 @@ class MarkDown extends Component{
     return(
         <div className="markdownContainer">
             <div className="markdownOptionsContainer">
-                <div>MARKDOWN</div>
-                <div
+                <div>PREVIEW</div>
+                <div className="markdownToggle"
                 onClick={this.changeView}
-                >&lt; &gt;</div>
+                >&lt; / &gt;</div>
             </div>
             {this.state.code
             ?<div className="markdownOutput">

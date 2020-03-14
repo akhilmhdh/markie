@@ -5,14 +5,23 @@
   padding: 10px 5px 5px 10px;
   font-family: "poppins";
   font-size: 12px;
+  background-color: white;
+  background-color: var(--details-bg-color);
+  color: black;
+  color: var(--details-font-color);
+  transition: 0.5s;
 }
 .documentTitle {
   display: flex;
   flex-direction: column;
+  width: inherit;
 }
 .documentTitle input {
   border: none;
   font-size: 24px;
+  width: 100%;
+  background-color: inherit;
+  color: inherit;
 }
 .documentDetails {
   display: flex;
@@ -21,4 +30,5 @@
 
 .documentDetails div {
   padding: 2.5px;
+  white-space: nowrap;
 }

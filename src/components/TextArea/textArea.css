@@ -1,12 +1,25 @@
 .textContainer {
   flex: 1;
   font-family: "poppins";
-  padding: 10px 5px 10px 5px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+.textTitle {
+  border: 1px solid #e8e8e8;
+  border: 1px solid var(--border-opacity);
+  font-family: Georgia, serif;
+  color: #a0aabf;
+  font-size: 12px;
+  padding: 15px 10px 15px 10px;
+  font-weight: 400;
+  background-color: white;
+  background-color: var(--details-bg-color);
+  transition: 0.5s;
 }
 .textSubContainer {
   flex: 1;
+  overflow: hidden;
 }
 .textSubContainer textarea {
   width: calc(100%);
@@ -16,4 +29,12 @@
   background-color: #fff;
   color: #222;
   font-family: Courier, monospace;
+}
+.CodeMirror {
+  line-height: 21px;
+}
+@media screen and (min-device-width: 720px) {
+  .CodeMirror {
+    height: 100%;
+  }
 }
