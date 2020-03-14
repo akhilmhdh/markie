@@ -22,13 +22,14 @@
 }
 
 .markdownOutput {
-  overflow: scroll;
+  overflow: auto;
   flex: 1;
   padding: 10px;
   background-color: white;
   background-color: var(--markDown-bg-color);
   color: black;
   color: var(--markDown-font-color);
+  transition: 0.5s;
 }
 
 .markdownToggle {
