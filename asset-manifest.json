@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/markie/static/css/main.c9901516.chunk.css",
+    "main.js": "/markie/static/js/main.3e64eead.chunk.js",
+    "main.js.map": "/markie/static/js/main.3e64eead.chunk.js.map",
+    "runtime-main.js": "/markie/static/js/runtime-main.f2793a17.js",
+    "runtime-main.js.map": "/markie/static/js/runtime-main.f2793a17.js.map",
+    "static/css/2.1f303d0b.chunk.css": "/markie/static/css/2.1f303d0b.chunk.css",
+    "static/js/2.e1c7de49.chunk.js": "/markie/static/js/2.e1c7de49.chunk.js",
+    "static/js/2.e1c7de49.chunk.js.map": "/markie/static/js/2.e1c7de49.chunk.js.map",
+    "index.html": "/markie/index.html",
+    "precache-manifest.71416867695306630dc0220b465b0508.js": "/markie/precache-manifest.71416867695306630dc0220b465b0508.js",
+    "service-worker.js": "/markie/service-worker.js",
+    "static/css/2.1f303d0b.chunk.css.map": "/markie/static/css/2.1f303d0b.chunk.css.map",
+    "static/css/main.c9901516.chunk.css.map": "/markie/static/css/main.c9901516.chunk.css.map",
+    "static/js/2.e1c7de49.chunk.js.LICENSE.txt": "/markie/static/js/2.e1c7de49.chunk.js.LICENSE.txt",
+    "static/media/download.png": "/markie/static/media/download.5acbe25e.png",
+    "static/media/index.css": "/markie/static/media/poppins-regular-webfont.b652b9c7.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2793a17.js",
+    "static/css/2.1f303d0b.chunk.css",
+    "static/js/2.e1c7de49.chunk.js",
+    "static/css/main.c9901516.chunk.css",
+    "static/js/main.3e64eead.chunk.js"
+  ]
+}
